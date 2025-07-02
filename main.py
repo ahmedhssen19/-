@@ -475,4 +475,4 @@ def main(page: ft.Page):
 
     page.on_resize = page_resize
 
-ft.app(target=main)
+ft.app(target=main, view=ft.WEB_BROWSER, port=int(os.environ.get("PORT", 8000)))
